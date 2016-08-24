@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/main_top"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="廊坊" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="无限行" />
+
+        <TextView
+            android:id="@+id/main_xianxingweihao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="1/6"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/main_user_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:gravity="right"
+            android:onClick="onClick"
+            android:text="未登录"
+            android:textColor="@color/text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_top" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- ViewPager是一个控件 -->
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/adv_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/adv_pager"
+                android:layout_marginTop="-25px"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/title_shadow" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom"
+        android:layout_below="@id/main_mid"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/main_jiayouzhan"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/jiayouzhan"
+                android:text="加油站" />
+
+            <TextView
+                android:id="@+id/main_xichedian"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/xichedian"
+                android:text="洗车店" />
+
+            <TextView
+                android:id="@+id/main_tingchechang"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/tingchechang"
+                android:text="停车场" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/main_weizhangchaxun"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/weizhangchaxun"
+                android:text="违章查询/代办" />
+
+            <TextView
+                android:id="@+id/main_nianjiandaiban"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/nianjiadaiban"
+                android:text="年检代办" />
+
+            <TextView
+                android:id="@+id/main_38yuandaijia"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/daijia"
+                android:text="38元代驾" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/main_baoyangbijia"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/baoyangbijia"
+                android:text="保养比价" />
+
+            <TextView
+                android:id="@+id/main_chexianbijia"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/chexianbijia"
+                android:text="车险比价" />
+
+            <TextView
+                android:id="@+id/main_quangoumianfeijiuyuan"
+                style="@style/nine_main"
+                android:drawableTop="@drawable/quanguomianfeijiuyuan"
+                android:text="全国免费救援" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#f5f5f5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="6dp" >
+
+            <ImageView
+                android:id="@+id/main_wodezhongxin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@drawable/gerenzhongxin" />
+
+            <ImageView
+                android:id="@+id/main_zijiayou"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@drawable/zijiayou" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false" />
+
+            <ImageView
+                android:id="@+id/main_wodedingdan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@drawable/wodedingdan" />
+
+            <ImageView
+                android:id="@+id/main_zixun"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClick"
+                android:src="@drawable/zixun" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_xingchejilu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClick"
+            android:src="@drawable/xingchejilu" />
+    </FrameLayout>
+
+</RelativeLayout>

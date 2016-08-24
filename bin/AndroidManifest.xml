@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fenghuo.jhdwxt.fourszaixian"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 云巴推送权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.jhd.fourszaixian.ui.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="l6NwpByv3N0isDhtg09uWd9G" />
+        <meta-data
+            android:name="YUNBA_APPKEY"
+            android:value="565bacdbf085fc471efe0980" />
+
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.BaiduMapActivity"
+            android:label="@string/title_activity_baidu_map"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity
+            android:name="com.jhd.fourszaixian.ui.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyOrderActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.BrandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.SeriesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.ModelAcitvity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.CarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.SignupActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.WeizhangActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.NianjianActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyShopActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyCarActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyQuanActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyMessageActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.XCRecardActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.XCReportActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.jhd.fourszaixian.ui.XingCheActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.ZJYActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.InfoAllActicleActicity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyInfomationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.MyCenterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.ChexianbijiaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.ChangjianwentiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 微信分享回调 -->
+        <activity
+            android:name="com.jhd.fourszaixian.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.jhd.fourszaixian.ui.KefuActivity"
+            android:theme="@style/activityAnimation"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.append.SettingActivity"
+            android:theme="@style/activityAnimation"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.append.NewsActivity"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity
+            android:name="com.jhd.fourszaixian.ui.append.NewsDetailActivity"
+            android:theme="@style/activityAnimation" >
+        </activity>
+        <activity android:name="com.jhd.fourszaixian.ui.append.SelfDriveTourActivity" >
+        </activity>
+        <activity android:name="com.jhd.fourszaixian.ui.append.DaijiaActivity" >
+        </activity>
+        <activity android:name="com.jhd.fourszaixian.ui.append.DaijiaYuyueActivity" >
+        </activity>
+        <activity android:name="com.jhd.fourszaixian.ui.append.MyOrderActivity" >
+        </activity>
+        <activity android:name="com.jhd.fourszaixian.ui.append.NianJianDaiBanActivity" >
+        </activity>
+
+        <!--
+        云巴推送的后台服务 
+         添加 YunBaReceiver, 用来监听网络变化等事件，确保网络切换时能重新建立长连接.
+        -->
+        <service android:name="io.yunba.android.core.YunBaService" >
+        </service>
+
+        <receiver android:name="io.yunba.android.core.YunBaReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 自定义 Receiver 接受 Publish 消息, Package Name 为当前应用程序的包名。 -->
+        <receiver android:name="com.jhd.fourszaixian.receiver.MyReceiver" >
+            <intent-filter>
+                <action android:name="io.yunba.android.MESSAGE_RECEIVED_ACTION" />
+
+                <category android:name="com.fenghuo.jhdwxt.fourszaixian" />
+            </intent-filter>
+        </receiver>
+    </application>
+    <!-- 云巴 appkey -->
+    <meta-data
+        android:name="YUNBA_APPKEY"
+        android:value="56580e5bf085fc471efe0894" />
+
+</manifest>

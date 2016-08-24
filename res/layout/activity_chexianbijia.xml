@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5" >
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/chexianbijia_tv_back"
+            style="@style/tv_back"
+            android:layout_width="wrap_content"
+            android:text="比车险" />
+
+        <TextView
+            android:id="@+id/chexianbijia_changjianwenti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:text="常见问题"
+            android:textColor="@color/text" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:paddingLeft="35dp">
+
+            <TextView
+                 android:textSize="15sp"
+                android:textColor="#dea13f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请注册及上传您的行驶证" />
+
+            <TextView
+                 android:textSize="15sp"
+                android:textColor="#dea13f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已确认车辆信息精准报价" />
+        </LinearLayout>
+
+         <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right" 
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#fff"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="35dp" >
+
+        
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前保险公司" />
+
+                <TextView
+                     android:textSize="15sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="请确认现在的保险公司" />
+
+                <ImageView
+                     android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right" 
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="35dp" >
+
+        
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                     android:textSize="15sp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="添加保险公司" />
+
+                <TextView
+                     android:textSize="15sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="请再选择两家要比价的保险公司" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+           
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:visibility="gone"
+        
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/btn_usual_selector"
+        android:textColor="#fff"
+        android:text="即刻比价" />
+    
+    <WebView 
+        
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+</LinearLayout>

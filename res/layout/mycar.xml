@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#eeeeee">
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mycar_tv_back"
+            style="@style/tv_back"
+            android:layout_width="wrap_content"
+            android:text="我的爱车" />     
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="@drawable/title_shadow"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mycar_inn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="车牌号码" />
+
+            <EditText
+                android:id="@+id/mycar_chenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入车牌号"
+                android:layout_marginRight="15dp" />
+        </LinearLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="品牌" />
+
+            <TextView
+                android:id="@+id/mycar_pinpai"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请选择"
+                android:textSize="20dp" />
+            <ImageView 
+                android:id="@+id/mycar_img_pinpai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                android:onClick="onClick"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"/>
+        </LinearLayout>
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="车系" />
+
+            <TextView
+                android:id="@+id/mycar_chexi"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请选择"
+                android:textSize="20dp" />
+            <ImageView 
+                android:id="@+id/mycar_img_chexi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                android:onClick="onClick"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"/>
+        </LinearLayout>
+         <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="具体车型" />
+
+            <TextView
+                android:id="@+id/mycar_chexing"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="请选择" 
+                android:textSize="20dp"/>
+            <ImageView 
+                android:id="@+id/mycar_img_chexing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right"
+                android:onClick="onClick"
+                android:paddingRight="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"/>
+        </LinearLayout>
+        
+        <Button 
+            android:id="@+id/mycar_keep"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+           
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_usual_selector"
+            android:text="保存"/>
+    </LinearLayout>
+
+</LinearLayout>

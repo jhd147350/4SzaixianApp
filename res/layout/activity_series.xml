@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/tv_back"
+        android:id="@+id/series_tv_back"
+        android:layout_width="wrap_content"     
+        android:text="选择车系"       
+        />
+
+    <RadioGroup
+        android:id="@+id/series_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/series_rbt1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:checked="true"
+            android:text="111"
+            android:textColor="@color/white"
+            android:background="@drawable/baoyang_tab"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/series_rbt2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:button="@null"
+            android:text="111"
+            android:background="@drawable/baoyang_tab"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/series_rbt3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:text="111"
+            android:textColor="@color/white"
+            android:background="@drawable/baoyang_tab"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/series_rbt4"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:background="@drawable/baoyang_tab"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="111"
+            android:visibility="gone" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/series_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

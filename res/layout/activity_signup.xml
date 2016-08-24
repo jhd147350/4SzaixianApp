@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+            android:id="@+id/signup_tv_back"
+            style="@style/tv_back"
+            android:layout_width="wrap_content"
+            android:text="注册" />
+
+    <EditText
+        android:id="@+id/signup_phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="手机号：11位" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="密码：大于六位"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/signup_confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="确认密码：请和密码保持一致"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/signup_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/signup_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+</LinearLayout>

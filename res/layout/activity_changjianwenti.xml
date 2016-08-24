@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f5f5f5">
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/changjianwenti_tv_back"
+            style="@style/tv_back"
+            android:layout_width="wrap_content"
+            android:text="4S在线" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="12dp"
+         android:background="@drawable/main_info_text_bg" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1、4S在线有几家保险公司可以比价？"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:text="答：亲，4S在线目前以支持太平洋、人保、平安、浙商、天平、天安、永诚7家保险公司比价。其他保险公司正在陆续添加中哦！" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="2、我通过4S在线比价购买车险为什么这么便宜？" />
+
+                <TextView
+                    android:textSize="17sp"
+                   android:textColor="#fff"
+                   android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="答：4S在线和多家保险公司都是紧密合作伙伴，通过4S在线购买车险没有中间环节，还可以享有会员团购价！所以车险价格哪家强，你懂得！" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="3、4S在线的报价是按什么标准报的？" />
+
+                <TextView
+                    android:textSize="17sp"
+                   android:textColor="#fff"
+                   android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="答：亲，这个要分两种情况：若果您是在上一份保单到期前一个月之内投保，4S在线是根据您去年的标准来报的；若果您是在上一份保单到期前一个月以上投保，则4S在线是按基本的保险项目来报的。" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="4、我在4S在线订购的车险和在保险公司订购的有什么区别吗？" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_width="wrap_content"
+                  android:textColor="#fff"
+                    android:layout_height="wrap_content"
+                    android:text="答：您在4S在线订购的车险服务和在保险公司订购时完全一样的！4S在线和保险公司是战略合作伙伴关系。4S在线是一家国内领先的、专业的汽车会员制服务机构，专注于为会员服务，为车主带来最大的利益。" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:textColor="#000"
+                    android:layout_height="wrap_content"
+                    android:text="3、4S在线的报价是按什么标准报的？" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_height="wrap_content"
+                   android:textColor="#fff"
+                    android:text="答：亲，这个要分两种情况：若果您是在上一份保单到期前一个月之内投保，4S在线是根据您去年的标准来报的；若果您是在上一份保单到期前一个月以上投保，则4S在线是按基本的保险项目来报的。" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="4、我在4S在线订购的车险和在保险公司订购的有什么区别吗？" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                   android:textColor="#fff"
+                    android:text="答：您在4S在线订购的车险服务和在保险公司订购时完全一样的！4S在线和保险公司是战略合作伙伴关系。4S在线是一家国内领先的、专业的汽车会员制服务机构，专注于为会员服务，为车主带来最大的利益。" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="3、4S在线的报价是按什么标准报的？" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:textColor="#fff"
+                    android:text="答：亲，这个要分两种情况：若果您是在上一份保单到期前一个月之内投保，4S在线是根据您去年的标准来报的；若果您是在上一份保单到期前一个月以上投保，则4S在线是按基本的保险项目来报的。" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:text="4、我在4S在线订购的车险和在保险公司订购的有什么区别吗？" />
+
+                <TextView
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    
+                    android:textColor="#fff"
+                    android:text="答：您在4S在线订购的车险服务和在保险公司订购时完全一样的！4S在线和保险公司是战略合作伙伴关系。4S在线是一家国内领先的、专业的汽车会员制服务机构，专注于为会员服务，为车主带来最大的利益。" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

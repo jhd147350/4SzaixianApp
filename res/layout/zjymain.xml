@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/zijiayou_tv_back"
+            style="@style/tv_back"
+            android:layout_width="wrap_content"
+            android:text="自驾游" />
+
+        <TextView
+            android:id="@+id/zijiayou_shaixuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:text="筛选"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/shaixuan_down"
+            android:textColor="@color/text" />
+    </RelativeLayout>
+
+    <EditText
+        android:background="@drawable/search"
+        android:id="@+id/zjy_search"
+        android:layout_width="match_parent"
+        android:paddingLeft="6dp"
+        android:layout_height="wrap_content"
+        android:hint="活动地搜索" />
+
+    <ListView
+        android:id="@+id/zjy_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

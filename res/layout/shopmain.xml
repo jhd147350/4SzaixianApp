@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/shop_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/wodedingdan_tab_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="基础保养"
+         android:textSize="15sp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/shop_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:layout_weight="1"
+        android:background="@drawable/wodedingdan_tab_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="套餐保养"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/shop_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/wodedingdan_tab_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="click"
+        android:text="地图"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+</LinearLayout>

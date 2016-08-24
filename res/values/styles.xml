@@ -1,0 +1,102 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="activityAnimation" parent="AppBaseTheme">
+        <item name="@android:windowAnimationStyle">@style/actAnimation</item>
+    </style>
+    <!--
+        <item name="android:activityCloseEnterAnimation">@anim/activity_slide_out_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_slide_in_right</item>
+        退出动画无效
+    -->
+    <style name="actAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_slide_out_right</item>
+    </style>
+
+    <!-- 返回按钮的样式 -->
+    <style name="tv_back">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableLeft">@drawable/back</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!-- 主页9宫格按钮的样式 -->
+    <style name="nine_main">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!-- 标题栏普通标题的样式 -->
+    <style name="tv_common">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+    <!-- 聊天界面的样式 -->
+    <style name="my_txt">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="chat_text_date_style">
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="chat_text_name_style">
+        <item name="android:textColor">#818181</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

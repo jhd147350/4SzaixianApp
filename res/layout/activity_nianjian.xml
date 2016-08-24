@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#eeeeee" >
+
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+
+        <TextView
+            android:id="@+id/nianjian_tv_back"
+            android:layout_width="wrap_content"
+            style="@style/tv_back"
+            android:text="年检代办" />
+
+        <TextView
+            android:id="@+id/nianjian_kefu"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="在线咨询"
+            android:textSize="16sp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/text" />
+    </RelativeLayout>
+
+    <include layout="@layout/activity_nianjian_list1" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="#000"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.市区代办费200元，含上门提车、全程检车、送车" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2.因用户车辆技术原因，车辆未通过年检200元费用将不予退还" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.年检费用预计130元左右，按实际发票全额向用户收取" />
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_usual_selector"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我要代办" />
+
+</LinearLayout>

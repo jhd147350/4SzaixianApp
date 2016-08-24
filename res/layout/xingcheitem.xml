@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/xcitem_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="type"
+        android:textColor="#000"
+        android:layout_marginLeft="5dp"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/xcitem_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="100"
+        android:textColor="@color/red"
+        android:textSize="17sp" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="元"
+        android:textSize="17sp" />
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginRight="5dp"
+        android:id="@+id/xcitem_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="time"
+        android:textSize="17sp" />
+
+</LinearLayout>

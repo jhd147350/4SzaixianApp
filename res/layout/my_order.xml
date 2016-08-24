@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/my_order_tv_back"
+            style="@style/tv_back"
+            android:layout_width="wrap_content"
+            android:text="我的订单" />
+
+    </RelativeLayout>
+
+     <include android:id="@+id/inn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        layout="@layout/ordermain"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
